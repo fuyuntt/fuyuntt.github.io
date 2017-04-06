@@ -33,4 +33,4 @@ java 堆的大小可以通过 vm 参数 -Xmx 与 -Xms 来控制。当 java 堆�
 直接内存（Direct Memory）并不是虚拟机运行时数据区的一部分，也不是 Java 虚拟机规范中定义的内存区域，它直接从操作系统中分配，因此不受 Java 堆大小的限制，但是会受到本机总内存的大小及处理器寻址空间的限制，因此它也可能导致 OutOfMemoryError 异常出现。在 JDK1.4 中新引入了 NIO 机制，它是一种基于通道与缓冲区的新 I/O 方式，可以直接从操作系统中分配直接内存，即在堆外分配内存，这样能在一些场景中提高性能，因为避免了在 Java 堆和 Native 堆中来回复制数据。
 
 #### 内存区简图
-![找不到图片](jvmdata.png)
+![找不到图片](https://github.com/lk-fuyun/pics/blob/master/jvmdata.png?raw=true)
